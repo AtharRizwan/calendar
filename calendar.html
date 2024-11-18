@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">Previous</button>
+            <h2 id="currentMonth"></h2>
+            <button id="nextMonth">Next</button>
+        </div>
+
+        <div class="calendar-view">
+            <div id="monthView" class="calendar-month-view">
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div id="calendarDates" class="dates-grid"></div>
+            </div>
+
+            <div id="weekView" class="calendar-week-view hidden">
+                <button id="prevWeek">Previous Week</button>
+                <button id="nextWeek">Next Week</button>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div id="weekDates" class="dates-grid"></div>
+            </div>
+        </div>
+
+        <button id="toggleView">Switch to Weekly View</button>
+
+        <div id="eventForm" class="hidden">
+            <h3>Add Event</h3>
+            <input type="text" id="eventName" placeholder="Event Name" />
+            <button id="saveEvent">Save Event</button>
+            <button id="cancelEvent">Cancel</button>
+            <div id="eventDetails" class="hidden"></div>
+            <button id="deleteEvent" class="hidden">Delete Event</button>
+        </div>
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+</html>
